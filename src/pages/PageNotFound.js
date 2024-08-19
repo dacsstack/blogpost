@@ -7,7 +7,7 @@ export const PageNotFound = () => {
 
   return (
     <section className="shadow-md border-1 rounded-md py-5 px-10">
-      <p className="block mb-2 text-center text-sm font-medium text-gray-900 dark:text-white ">
+      <p className="block mb-2 text-center text-lg font-medium text-gray-900 dark:text-white ">
         404 / Page Not Found
       </p>
       <img src={Logo} alt="Page Not Found" />
