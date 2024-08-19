@@ -28,7 +28,7 @@ export const CreatePost = () => {
   return (
     <section className="create py-40">
       <div className="divide-x-4 mb-4"></div>
-
+      <h1 className="justify-center">Create Post</h1>
       <form
         className="shadow-md border-1 rounded-md py-5 px-10"
         onSubmit={handleCreatePost}
