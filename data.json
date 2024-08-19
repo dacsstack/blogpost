@@ -1,0 +1,27 @@
+[
+  {
+    "id": "EeVdFZtUVlPm54dveJgm",
+    "description": "The microblogging web application was built with React, Storage/Auth with Firebase, and deployed on Netlify. This a simple project that works with Firebase react router dom and understanding the skeleton",
+    "title": "React JS"
+  },
+  {
+    "id": "TYsjYWrSZ6f9A0gAYoIo",
+    "description": "useEffect(() => {\n    localStorage.setItem(\"darkMode\", JSON.stringify(darkMode));\n\n    if (darkMode) {\n      document.documentElement.classList.add(\"dark\");\n    } else {\n      document.documentElement.classList.remove(\"dark\");\n    }\n  }, [darkMode]);",
+    "title": "UseEffect"
+  },
+  {
+    "id": "U7saOqjFoZ7QH8NSYV7o",
+    "description": "function handleLogin() {\n    signInWithPopup(auth, provider).then(() => {\n      setIsAuth(true);\n      navigate(\"/\");\n      localStorage.setItem(\"isAuth\", true);\n    });\n  }",
+    "title": "onClick={handleLogin}"
+  },
+  {
+    "id": "e0AZEUVzJgfP8ckdGKBj",
+    "description": "export const PostCard = ({ post, toggle, setToggle }) => {\n  const { id, title, description, author } = post;\n  const isAuth = JSON.parse(localStorage.getItem(\"isAuth\"));\n\n  async function handleDelete() {\n    const document = doc(db, \"posts\", id);\n    await deleteDoc(document);\n    setToggle(!toggle);\n  }",
+    "title": "Post Card"
+  },
+  {
+    "id": "f9IHQ4sWMPqFFPBgeWhp",
+    "description": " const postRef = collection(db, \"posts\");\n\n  async function handleCreatePost(event) {\n    event.preventDefault();\n    // console.log(auth);\n    const document = {\n      title: event.target.title.value,\n      description: event.target.description.value,\n      createdAt: serverTimestamp(),\n      author: {\n        name: auth.currentUser.displayName,\n        id: auth.currentUser.uid,\n        profile: auth.currentUser.photoURL,\n      },\n    };\n    await addDoc(postRef, document);\n    navigate(\"/\");\n  }",
+    "title": "onSubmit={handleCreatePost}"
+  }
+]
