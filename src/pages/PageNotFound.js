@@ -6,7 +6,7 @@ export const PageNotFound = () => {
   useTitle("Page Not Found");
 
   return (
-    <section className="flex flex-col rounded-md shadow-lg w-full max-w-[1280p] leading-1.5 p-4 m-3 border-gray-200 bg-gray-100 rounded-e-xl rounded-es-xl dark:bg-gray-700">
+    <section className="shadow-md border-1 rounded-md py-5 px-10">
       <p className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
         404 / Page Not Found
       </p>
