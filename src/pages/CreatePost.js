@@ -28,7 +28,7 @@ export const CreatePost = () => {
   return (
     <section className="create py-40">
       <div className="divide-x-4 mb-4"></div>
-      <h1 className="text-center text-lg block mb-2 text-sm font-medium text-gray-900 dark:text-white">
+      <h1 className="text-center text-lg block mb-2 font-medium text-gray-900 dark:text-white">
         Create Post
       </h1>
       <form
